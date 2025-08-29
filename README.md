@@ -32,12 +32,15 @@ STEP 8: Use heatmap method of representation to show relationships between two v
    import seaborn as sns 
    df=pd.read_csv("/content/titanic_dataset.csv")
    df
+   
 <img width="1141" height="962" alt="image" src="https://github.com/user-attachments/assets/4cb2db61-7370-4306-9421-b43e2e6098a1" />
 
 df.info()
+
 <img width="810" height="660" alt="image" src="https://github.com/user-attachments/assets/f2bb221d-0db7-4fa3-83f2-f6b927603182" />
 
 df.shape
+
 <img width="192" height="70" alt="image" src="https://github.com/user-attachments/assets/45a0706a-170a-4804-9eb3-3c6ab1b4917b" />
 
 import pandas as pd
@@ -47,9 +50,11 @@ print(df.set_index)
 <img width="880" height="952" alt="image" src="https://github.com/user-attachments/assets/04f9990b-3376-49a5-bcfa-f27924bceabb" />
 
 df.describe()
+
 <img width="834" height="388" alt="image" src="https://github.com/user-attachments/assets/e1a807bd-266b-45ff-b1da-ca50f71c116f" />
 
 df.nunique()
+
 <img width="257" height="403" alt="image" src="https://github.com/user-attachments/assets/3b0b63a9-da05-4ca7-a8d8-719538fd4fb1" />
 
 df["Survived"].value_counts()
@@ -63,9 +68,11 @@ sns.countplot(data=df,x="Survived")
 
 df
 <img width="834" height="340" alt="image" src="https://github.com/user-attachments/assets/fe5e39ab-f0d3-4623-a3a6-d7c1cba6b5b2" />
-
 df.Pclass.unique()
-<img width="281" height="95" alt="image" src="https://github.com/user-attachments/assets/3f64c3ed-8973-4db0-9bc8-54078617059e" />
+
+<img width="256" height="76" alt="Screenshot 2025-08-29 130432" src="https://github.com/user-attachments/assets/1ddb922c-a864-450d-8d3c-6bbab05f61f9" />
+
+
 
 df.rename(columns={'sex':'Gender'},inplace=True) df
 <img width="803" height="293" alt="image" src="https://github.com/user-attachments/assets/ec2f2b7f-a925-486d-83a5-067926eab700" />
